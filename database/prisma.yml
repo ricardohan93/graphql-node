@@ -1,0 +1,14 @@
+# o nome do service, vai fazer parte do endpoint do Prisma API
+service: hackernews-node
+
+# the deployement stage, algo will be part of the API endpoint
+stage: dev
+
+# Aponta pro arquivo que possui o datamodel
+datamodel: datamodel.graphql
+
+# Só pode acessar a API se providenciar o JWTs, que possui esse secret
+secret: mysecret123
+
+# criado pelo CLI do Prisma
+cluster: public-dandelionhorse-789/prisma-us1
